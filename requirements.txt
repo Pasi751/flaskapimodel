@@ -1,0 +1,6 @@
+Flask
+requests
+torch
+tensorflow
+tf-keras
+ctransformers>=0.2.24
