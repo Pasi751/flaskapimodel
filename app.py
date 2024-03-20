@@ -12,6 +12,10 @@ llm = AutoModelForCausalLM.from_pretrained("Pasindu751/genify-llama2-q8_0", mode
 
 
 @app.route('/', methods=['GET'])
+def homepage():
+        return "<h1>Model hosted successfully<h1>"
+
+@app.route('/hello', methods=['GET'])
 def get_documentation():
         return jsonify({"documentation": "hello"})
 
